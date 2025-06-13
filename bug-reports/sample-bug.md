@@ -5,6 +5,7 @@ This section outlines the bug reporting and retesting process designed using Jir
 ##Responsibility:
 - Designed bug report flow and defect lifecycle in Jira.
 - Created custom templates for consistent bug and retest report formats.
+- Designed and implemented SOPs to standardize bug titles, descriptions, terminology, and formatting in Jira to ensure consistency, clarity, and traceability across the QA team.
 
 ##Example of bug report:
 
