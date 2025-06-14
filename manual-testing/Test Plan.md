@@ -45,7 +45,7 @@ To verify the functionality, usability, security, and compatibility of the login
 
 ---
 
-## 🧪 Test Scenarios
+## 🧪 Features to Test
 
 ### ✅ Functional Scenarios
 **Positive Test Cases:**
