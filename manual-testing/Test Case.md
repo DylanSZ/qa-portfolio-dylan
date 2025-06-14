@@ -1,10 +1,10 @@
-# ✅ Login Page – Test Cases
+# Login Page – Test Cases
 
 This document contains detailed manual test cases derived from the Login Page Test Scenarios.
 
 ---
 
-## 🧪 Functional Test Cases
+## Functional Test Cases
 
 ### TC001 – Login succeeds with valid credentials  
 **Scenario ID:** TS001  
@@ -61,7 +61,7 @@ This document contains detailed manual test cases derived from the Login Page Te
 
 ---
 
-## 🎨 UI/UX Test Cases
+## UI/UX Test Cases
 
 ### TC006 – Login button enabled only when required fields are filled  
 **Scenario ID:** TS006  
@@ -103,7 +103,7 @@ This document contains detailed manual test cases derived from the Login Page Te
 
 ---
 
-## 📱 Compatibility Test Cases
+## Compatibility Test Cases
 
 ### TC010 – Mobile browser login functionality  
 **Scenario ID:** TS010  
@@ -135,7 +135,7 @@ This document contains detailed manual test cases derived from the Login Page Te
 
 ---
 
-## 🔒 Security Test Cases
+## Security Test Cases
 
 ### TC013 – SQL injection prevention  
 **Scenario ID:** TS013  
