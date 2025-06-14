@@ -1,19 +1,43 @@
-## 🧪 Test Scenarios for Login Page
+# 🔍 Test Scenarios – Login Page
 
-| Scenario ID | Test Scenario Description                                           | Type         |
-|-------------|---------------------------------------------------------------------|--------------|
-| TS-01       | Verify login with valid username and password                      | Positive     |
-| TS-02       | Verify login with invalid username and/or password                 | Negative     |
-| TS-03       | Verify login attempt with empty username and password fields       | Negative     |
-| TS-04       | Verify login attempt with only username filled                     | Negative     |
-| TS-05       | Verify login attempt with only password filled                     | Negative     |
-| TS-06       | Verify password field is masked                                    | Functional   |
-| TS-07       | Verify the login button is disabled until both fields are filled   | UI/UX        |
-| TS-08       | Verify placeholder text is shown in input fields                   | UI/UX        |
-| TS-09       | Verify login page layout on different screen sizes (responsive)    | Compatibility|
-| TS-10       | Verify login page works on major browsers (Chrome, Firefox, Edge)  | Compatibility|
-| TS-11       | Verify SQL injection does not bypass login authentication          | Security     |
-| TS-12       | Verify HTML/JS injection is blocked in input fields                | Security     |
-| TS-13       | Verify session cookies are marked as Secure and HttpOnly           | Security     |
-| TS-14       | Verify keyboard navigation and tab order between input fields      | Accessibility|
+This document outlines the high-level test scenarios identified for validating the functionality, usability, compatibility, and security of the login page.
 
+---
+
+## 🧪 Functional Test Scenarios
+
+- **TS001**: Verify login functionality with valid username and password.
+- **TS002**: Verify login with valid username containing special characters (e.g., dot, underscore).
+- **TS003**: Verify login with incorrect password.
+- **TS004**: Verify login with an unregistered username.
+- **TS005**: Verify login behavior when username and/or password fields are left empty.
+
+---
+
+## 🎨 UI/UX Test Scenarios
+
+- **TS006**: Verify that the login button is appropriately enabled or disabled based on field input.
+- **TS007**: Verify placeholder text for username and password input fields.
+- **TS008**: Verify consistency in font size, alignment, and spacing on the login page.
+- **TS009**: Verify keyboard navigation and tab order across login fields.
+
+---
+
+## 📱 Compatibility Test Scenarios
+
+- **TS010**: Verify the login page functionality and layout on mobile browsers (e.g., Chrome, Safari).
+- **TS011**: Verify responsive layout behavior across desktop and tablet resolutions.
+- **TS012**: Verify cross-browser compatibility on modern browsers (Chrome, Firefox, Edge).
+
+---
+
+## 🔒 Security Test Scenarios
+
+- **TS013**: Verify that the system prevents SQL injection via input fields.
+- **TS014**: Verify that HTML or JavaScript code injection is blocked and safely handled.
+- **TS015**: Verify that session cookies are configured with `Secure` and `HttpOnly` attributes.
+
+---
+
+**Document Prepared By**: `Dylan`  
+**Last Reviewed**: `11 May 2025`
