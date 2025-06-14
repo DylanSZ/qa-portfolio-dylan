@@ -1,156 +1,133 @@
-# ✅ Test Cases – Login Page
+# ✅ Login Page – Test Cases
 
-This document contains the detailed test cases that correspond to the defined test scenarios for the login page.
+This document outlines detailed test cases for validating the login functionality, including positive, negative, UI/UX, compatibility, and security scenarios.
 
 ---
 
-### TC001 – Login with Valid Credentials
+## 🔐 Functional Test Cases
 
-- **Scenario ID**: TS001  
-- **Test Steps**:
+### 1. User should successfully log in with valid username and password
+- **Test Steps:**
   1. Navigate to the login page.
-  2. Enter a valid username and password.
-  3. Click the "Login" button.  
-- **Expected Result**: User is successfully logged in and redirected to the dashboard.
+  2. Enter a valid username.
+  3. Enter the correct password.
+  4. Click the "Login" button.
+- **Expected Result:** User is redirected to the dashboard or homepage.
+- **Test Result:** _Pass / Fail_
 
 ---
 
-### TC002 – Login with Special Characters in Username
-
-- **Scenario ID**: TS002  
-- **Test Steps**:
-  1. Enter a username containing allowed special characters (e.g., john.doe).
-  2. Enter a valid password.
-  3. Click the "Login" button.  
-- **Expected Result**: Login succeeds and user is redirected appropriately.
-
----
-
-### TC003 – Login with Incorrect Password
-
-- **Scenario ID**: TS003  
-- **Test Steps**:
-  1. Enter a valid username.
-  2. Enter an incorrect password.
-  3. Click the "Login" button.  
-- **Expected Result**: System displays an error message: "Invalid username or password."
+### 2. System should display error when incorrect password is entered
+- **Test Steps:**
+  1. Navigate to the login page.
+  2. Enter a valid username.
+  3. Enter an incorrect password.
+  4. Click "Login".
+- **Expected Result:** Error message "Incorrect password" is shown.
+- **Test Result:** _Pass / Fail_
 
 ---
 
-### TC004 – Login with Unregistered Username
-
-- **Scenario ID**: TS004  
-- **Test Steps**:
-  1. Enter a username not registered in the system.
-  2. Enter a valid or invalid password.
-  3. Click the "Login" button.  
-- **Expected Result**: System denies login and displays an appropriate error message.
-
----
-
-### TC005 – Login with Empty Fields
-
-- **Scenario ID**: TS005  
-- **Test Steps**:
-  1. Leave both username and password fields empty.
-  2. Click the "Login" button.  
-- **Expected Result**: System displays validation messages for both required fields.
+### 3. Login form should show validation errors when both fields are blank
+- **Test Steps:**
+  1. Navigate to login page.
+  2. Leave username and password empty.
+  3. Click "Login".
+- **Expected Result:** Validation messages "Username is required" and "Password is required" are displayed.
+- **Test Result:** _Pass / Fail_
 
 ---
 
-### TC006 – Login Button State
-
-- **Scenario ID**: TS006  
-- **Test Steps**:
-  1. Observe the login button state before and after entering values in input fields.  
-- **Expected Result**: The button is enabled only when both username and password fields are populated.
-
----
-
-### TC007 – Placeholder Text Verification
-
-- **Scenario ID**: TS007  
-- **Test Steps**:
-  1. View the login page.
-  2. Check placeholder text in username and password fields.  
-- **Expected Result**: Placeholder text (e.g., “Enter your username”) is clearly displayed.
-
----
-
-### TC008 – UI Layout Consistency
-
-- **Scenario ID**: TS008  
-- **Test Steps**:
-  1. Observe the layout, alignment, spacing, and fonts used in the login form.  
-- **Expected Result**: UI elements should follow the defined design guidelines.
-
----
-
-### TC009 – Keyboard Navigation Order
-
-- **Scenario ID**: TS009  
-- **Test Steps**:
-  1. Use the Tab key to move between fields.  
-- **Expected Result**: Focus moves from username → password → login button in order.
-
----
-
-### TC010 – Mobile Browser Compatibility
-
-- **Scenario ID**: TS010  
-- **Test Steps**:
-  1. Open the login page in mobile browsers (e.g., Chrome, Safari).  
-- **Expected Result**: The page should be fully functional and properly displayed on mobile.
-
----
-
-### TC011 – Responsive Layout on Devices
-
-- **Scenario ID**: TS011  
-- **Test Steps**:
-  1. Resize the browser or test on tablet/desktop.  
-- **Expected Result**: The layout should adjust and display correctly based on screen size.
-
----
-
-### TC012 – Cross-Browser Functionality
-
-- **Scenario ID**: TS012  
-- **Test Steps**:
-  1. Open the login page on Chrome, Firefox, and Edge browsers.  
-- **Expected Result**: Page functions consistently across all browsers.
-
----
-
-### TC013 – SQL Injection Attempt
-
-- **Scenario ID**: TS013  
-- **Test Steps**:
-  1. Enter `' OR '1'='1` in the username field.
+### 4. Login attempt with unregistered username should fail with error
+- **Test Steps:**
+  1. Enter a username that doesn't exist.
   2. Enter any password.
-  3. Attempt to log in.  
-- **Expected Result**: Login fails and input is sanitized. No data leakage or unauthorized access.
+  3. Click "Login".
+- **Expected Result:** Error message "User not found" or equivalent.
+- **Test Result:** _Pass / Fail_
 
 ---
 
-### TC014 – JavaScript Injection Handling
-
-- **Scenario ID**: TS014  
-- **Test Steps**:
-  1. Enter `<script>alert('xss')</script>` in the username field.  
-- **Expected Result**: Input is treated as plain text. No script is executed.
-
----
-
-### TC015 – Secure Session Cookie Validation
-
-- **Scenario ID**: TS015  
-- **Test Steps**:
-  1. Successfully log in.
-  2. Inspect session cookie attributes in developer tools.  
-- **Expected Result**: `Secure` and `HttpOnly` flags are set on session cookies.
+### 5. System should validate individual field when only username is entered
+- **Test Steps:**
+  1. Enter a valid username.
+  2. Leave password blank.
+  3. Click "Login".
+- **Expected Result:** Validation message "Password is required" is displayed.
+- **Test Result:** _Pass / Fail_
 
 ---
 
-**Document Prepared By**: `Dylan`  
-**Last Reviewed**: `11 May 2025`
+## 🎨 UI/UX Test Cases
+
+### 6. Login button should be disabled when required fields are empty
+- **Test Steps:**
+  1. Leave both fields blank.
+  2. Observe the state of the Login button.
+- **Expected Result:** Login button is disabled or inactive.
+- **Test Result:** _Pass / Fail_
+
+---
+
+### 7. Placeholder text should be visible in username and password fields
+- **Test Steps:**
+  1. Navigate to login page.
+  2. Check input placeholders.
+- **Expected Result:** "Enter Username" and "Enter Password" placeholders are shown.
+- **Test Result:** _Pass / Fail_
+
+---
+
+### 8. Focus should move correctly using tab key
+- **Test Steps:**
+  1. Press "Tab" on username field.
+- **Expected Result:** Cursor moves to password, then to Login button.
+- **Test Result:** _Pass / Fail_
+
+---
+
+## 📱 Compatibility Test Cases
+
+### 9. Login form layout should be responsive on tablet screen
+- **Test Steps:**
+  1. Open login page on a tablet browser.
+- **Expected Result:** Form adjusts properly without UI breaks.
+- **Test Result:** _Pass / Fail_
+
+### 10. Login form should display correctly across major browsers
+- **Test Steps:**
+  1. Open login page on Chrome, Firefox, Edge.
+- **Expected Result:** Consistent layout and functionality.
+- **Test Result:** _Pass / Fail_
+
+---
+
+## 🔒 Security Test Cases
+
+### 11. Application should block SQL injection in input fields
+- **Test Steps:**
+  1. Enter `admin' OR '1'='1` in the username field.
+  2. Enter any password.
+- **Expected Result:** Login fails with a generic error, no SQL exposed.
+- **Test Result:** _Pass / Fail_
+
+---
+
+### 12. HTML or JS script input should be blocked
+- **Test Steps:**
+  1. Enter `<script>alert(1)</script>` in either field.
+- **Expected Result:** Script is neutralized; no code executes.
+- **Test Result:** _Pass / Fail_
+
+---
+
+### 13. Session cookie should have Secure and HttpOnly flags
+- **Test Steps:**
+  1. Inspect browser cookies after login.
+- **Expected Result:** Session cookies have `Secure` and `HttpOnly` attributes.
+- **Test Result:** _Pass / Fail_
+
+---
+
+**Prepared by:** `Dylan`  
+**Last Updated:** `11 May 2025`
