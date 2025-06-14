@@ -1,16 +1,16 @@
-# 📝 Login Page – Test Plan
+# Login Page – Test Plan
 
 This test plan outlines the objectives, scope, strategy, and scenarios for testing the login functionality of the application.
 
 ---
 
-## 📌 Objective
+## Objective
 
 To verify the functionality, usability, security, and compatibility of the login page to ensure only authorized users can access the system.
 
 ---
 
-## 📌 Scope
+## Scope
 
 ### In Scope:
 - Functional testing
@@ -24,7 +24,7 @@ To verify the functionality, usability, security, and compatibility of the login
 
 ---
 
-## 🧰 Test Strategy
+## Test Strategy
 
 | Type of Testing         | Tools/Methods Used                         |
 |-------------------------|--------------------------------------------|
@@ -36,7 +36,7 @@ To verify the functionality, usability, security, and compatibility of the login
 
 ---
 
-## 👥 Test Roles & Responsibility
+## Test Roles & Responsibility
 
 | Role                 | Responsibility                                     |
 |----------------------|----------------------------------------------------|
@@ -45,9 +45,9 @@ To verify the functionality, usability, security, and compatibility of the login
 
 ---
 
-## 🧪 Features to Test
+## Features to Test
 
-### ✅ Functional Scenarios
+### Functional Scenarios
 **Positive Test Cases:**
 - Login with valid username and password.
 - Login with special characters allowed in username (e.g., dot, underscore).
@@ -57,18 +57,18 @@ To verify the functionality, usability, security, and compatibility of the login
 - Login with unregistered username.
 - Attempt login with blank username or password fields.
 
-### 🎨 UI/UX Scenarios
+### UI/UX Scenarios
 7. Login button visibility and state (enabled/disabled)
 8. Placeholder text in input fields
 9. Font size, spacing, alignment consistency
 10. Focus moves correctly when tab key is used
 
-### 📱 Compatibility Scenarios
+### Compatibility Scenarios
 11. Login page on mobile browsers (Chrome, Safari)
 12. Responsive layout on tablet and desktop
 13. Cross-browser test (Chrome, Edge, Firefox)
 
-### 🔒 Security Scenarios
+### Security Scenarios
 14. SQL injection prevention
 15. HTML/JS injection blocked in input
 16. Session cookie should be secure and HttpOnly
