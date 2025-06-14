@@ -75,7 +75,7 @@ To verify the functionality, usability, security, and compatibility of the login
 
 ---
 
-## ⏱️ Test Schedule
+## Test Schedule
 
 | Phase               | Timeline        |
 |---------------------|-----------------|
@@ -86,7 +86,7 @@ To verify the functionality, usability, security, and compatibility of the login
 
 ---
 
-## ✅ Entry and Exit Criteria
+## Entry and Exit Criteria
 
 **Entry Criteria**
 - Development of login feature is complete
@@ -100,7 +100,7 @@ To verify the functionality, usability, security, and compatibility of the login
 
 ---
 
-## 📁 Deliverables
+## Deliverables
 
 - Test Plan
 - Test Cases
