@@ -1,10 +1,10 @@
-# 🔍 Test Scenarios – Login Page
+# Test Scenarios – Login Page
 
 This document outlines the high-level test scenarios identified for validating the functionality, usability, compatibility, and security of the login page.
 
 ---
 
-## 🧪 Functional Test Scenarios
+## Functional Test Scenarios
 
 - **TS001**: Verify login functionality with valid username and password.
 - **TS002**: Verify login with valid username containing special characters (e.g., dot, underscore).
@@ -14,7 +14,7 @@ This document outlines the high-level test scenarios identified for validating t
 
 ---
 
-## 🎨 UI/UX Test Scenarios
+## UI/UX Test Scenarios
 
 - **TS006**: Verify that the login button is appropriately enabled or disabled based on field input.
 - **TS007**: Verify placeholder text for username and password input fields.
@@ -23,7 +23,7 @@ This document outlines the high-level test scenarios identified for validating t
 
 ---
 
-## 📱 Compatibility Test Scenarios
+## Compatibility Test Scenarios
 
 - **TS010**: Verify the login page functionality and layout on mobile browsers (e.g., Chrome, Safari).
 - **TS011**: Verify responsive layout behavior across desktop and tablet resolutions.
@@ -31,7 +31,7 @@ This document outlines the high-level test scenarios identified for validating t
 
 ---
 
-## 🔒 Security Test Scenarios
+## Security Test Scenarios
 
 - **TS013**: Verify that the system prevents SQL injection via input fields.
 - **TS014**: Verify that HTML or JavaScript code injection is blocked and safely handled.
