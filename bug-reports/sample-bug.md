@@ -2,19 +2,23 @@
 
 This section outlines the bug reporting and retesting process designed using Jira. The goal is to ensure clear communication, traceability, and consistent defect lifecycle tracking between QA, developers, and BAs.
 
-#Responsibility:
-- Designed bug report flow and defect lifecycle in Jira.
+# Responsibility
+- Designed bug report flow and defect lifecycle in Jira and Marker.io.
 - Created custom templates for consistent bug and retest report formats.
 - Designed and implemented SOPs to standardize bug titles, descriptions, terminology, and formatting in Jira to ensure consistency, clarity, and traceability across the QA team.
 
-# Example of bug report:
+# Tools
+- Jira
+- Marker.io
+
+# Example of bug report
 
 - **Platform**: Jira
 - **Custom Fields**: Environment, Priority, Linked Work Item, Assignee
 
 ## Functional bug
 
-Bug Report: Incorrect Payment Type Displayed for Bank Account
+### Bug report: Incorrect Payment Type Displayed for Bank Account
 
 | No. | Issue | Test Steps | Expected Result | Attachment |
 |-----|-------|------------|-----------------|------------|
@@ -22,15 +26,15 @@ Bug Report: Incorrect Payment Type Displayed for Bank Account
 
 **Note**: -
 
-## Bug retest report:
+### Bug retest report:
 
 | No. | Test Result | Attachment |
 |-----|-------|------------|
 | 1   | **Pass.** <br> The Payment Type **display as Bank** for Bank account.| RT_100.png|
 
-# UI bug
+## UI bug
 
-Bug Report: Misaligned Button in Checkout Page
+### Bug report: Misaligned Button in Checkout Page
 
 | No. | Issue | Test Steps | Expected Result | Attachment |
 |-----|-------|------------|-----------------|------------|
@@ -40,7 +44,7 @@ Bug Report: Misaligned Button in Checkout Page
 - Issue affects usability and may cause difficulty for users to complete a purchase on smaller screens.
 - Tested on Chrome Version 123.0 and Firefox 115.0 on Windows 10.
 
-##Bug retest report:
+### Bug retest report
 
 | No. | Test Result | Attachment |
 |-----|-------------|------------|
