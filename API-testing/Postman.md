@@ -1,10 +1,10 @@
-# ✅ Postman API Test – `masterBankEntries` Validation
+# Postman API Test – `masterBankEntries` Validation
 
 This document showcases a sample test script created using **Postman** to validate the API response for the `masterBankEntries` endpoint. It demonstrates best practices in status code validation, response structure checks, type assertions, and data rules.
 
 ---
 
-## 🔍 Overview
+## Overview
 
 This test suite ensures that:
 
@@ -15,7 +15,7 @@ This test suite ensures that:
 
 ---
 
-## 🧪 Test Coverage
+## Test Coverage
 
 | No.   | Test Case Description                                                              |
 |-------|-------------------------------------------------------------------------------------|
@@ -29,7 +29,7 @@ This test suite ensures that:
 
 ---
 
-## 💻 Postman Test Script
+## Postman Test Script
 
 ```javascript
 const jsonData = pm.response.json();
