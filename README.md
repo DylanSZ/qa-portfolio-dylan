@@ -4,6 +4,7 @@ This portfolio showcases test cases, bug reports, and automation scripts I've cr
 
 ## Contents
 
-- 📁 Manual Testing
-- 📁 Automation Testing
-- 📁 Bug Reports
+- 📁 API Testing
+- 📁 Automation
+- 📁 Bug Report
+- 📁 Test Management
