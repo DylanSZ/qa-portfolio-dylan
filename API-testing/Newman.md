@@ -32,7 +32,8 @@ The generated HTML report provides clear insights into the request execution sta
 
 📸 **Screenshot – Newman HTML Report:**
 
-![Newman HTML Report](https://github.com/user-attachments/assets/c2dffaff-df74-4d0f-b18d-c03bfd19ed0a)
+![Newman HTML Report](https://github.com/user-attachments/assets/a474992c-94c2-4d70-9f8a-63761c97bee3)
+
 
 
 ---
