@@ -19,3 +19,5 @@ This portfolio showcases test cases, bug reports, and automation scripts I've cr
 - Selenium
 - Lighthouse (Chrome DevTools)
 - Allure Report
+- Screaming Frog
+- Meta SEO Inspector
