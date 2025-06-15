@@ -9,7 +9,7 @@ This portfolio showcases test cases, bug reports, and automation scripts I've cr
 - 📁 Bug Report
 - 📁 Test Management
 
-## Tools & Extension
+## Tools & Extensions
 - BrowserStack
 - Jira
 - Figma
