@@ -8,7 +8,6 @@ This section highlights the integration of **Postman** and **Newman** for API te
 ## 🏆 Key Achievement
 
 Successfully introduced **Newman** to the QA team for running Postman collections via the command line. This enabled:
-- Seamless local and CI/CD-based API test execution
 - Automated generation of detailed HTML reports
 - Easier test result sharing across teams
 
@@ -17,7 +16,7 @@ Successfully introduced **Newman** to the QA team for running Postman collection
 ## ⚙️ Newman Execution in Command Line
 
 ```bash
-newman run login-test.postman_collection.json -r cli,html
+newman run my-collection.json -e my-environment.json -r cli,html --reporter-html-export report.html
 ```
 
 📸 **Screenshot – Running Newman via CLI:**
