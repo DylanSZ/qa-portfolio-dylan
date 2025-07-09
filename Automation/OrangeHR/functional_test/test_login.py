@@ -42,7 +42,7 @@ def test_login(driver, data):
     expected_error = data["error_message"]
     desc = data["description"]
 
-    print(f"\n🧪 Test Case: {desc}")
+    print(f"Test Case: {desc}")
 
     # Input fields
     if username:
@@ -55,21 +55,21 @@ def test_login(driver, data):
 
     if expected == "success":
         heading = driver.find_element(By.TAG_NAME, "h6").text
-        assert "dashboard" in heading.lower(), f"❌ Expected successful login for: {desc}"
-        print("✅ Success login test passed.")
+        assert "dashboard" in heading.lower(), f"Expected successful login for: {desc}"
+        print("Success login test passed.")
     else:
         try:
             # Error message after failed login
             error = driver.find_element(By.XPATH, "//p[contains(@class,'oxd-alert-content-text')]").text
-            assert expected_error.lower() in error.lower(), f"❌ Error message mismatch for: {desc}"
-            print("✅ Negative login test passed.")
+            assert expected_error.lower() in error.lower(), f"Error message mismatch for: {desc}"
+            print("Negative login test passed.")
         except:
             # Error message for empty required fields
             username_error = driver.find_elements(By.XPATH, "//input[@name='username']/ancestor::div[contains(@class,'oxd-input-group')]//span")
             password_error = driver.find_elements(By.XPATH, "//input[@name='password']/ancestor::div[contains(@class,'oxd-input-group')]//span")
 
             if expected_error.lower() == "required":
-                assert username_error or password_error, f"❌ Required field error missing: {desc}"
-                print("✅ Empty field validation passed.")
+                assert username_error or password_error, f"Required field error missing: {desc}"
+                print("Empty field validation passed.")
             else:
-                raise AssertionError(f"❌ No matching error found for: {desc}")
+                raise AssertionError(f"No matching error found for: {desc}")
